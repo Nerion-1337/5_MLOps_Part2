@@ -1,0 +1,13 @@
+name: openclassrooms
+
+services:
+  scoring_api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: credit_scoring_api
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data/mlflow:/app/data/mlflow
