@@ -17,18 +17,31 @@ class ClientInput(BaseModel):
         if not v:
             raise ValueError("Le dictionnaire de features ne peut pas être vide.")
 
-        # Contrôles de cohérence métier
+        # Contrôle sur AMT_CREDIT
         if "AMT_CREDIT" in v and v["AMT_CREDIT"] is not None:
-            if v["AMT_CREDIT"] <= 0:
+            try:
+                credit_val = float(v["AMT_CREDIT"])
+            except (ValueError, TypeError):
+                raise ValueError("AMT_CREDIT doit être un nombre valide.")
+            if credit_val <= 0:
                 raise ValueError("AMT_CREDIT doit être strictement supérieur à 0.")
 
+        # Contrôle sur AMT_INCOME_TOTAL
         if "AMT_INCOME_TOTAL" in v and v["AMT_INCOME_TOTAL"] is not None:
-            if v["AMT_INCOME_TOTAL"] <= 0:
+            try:
+                income_val = float(v["AMT_INCOME_TOTAL"])
+            except (ValueError, TypeError):
+                raise ValueError("AMT_INCOME_TOTAL doit être un nombre valide.")
+            if income_val <= 0:
                 raise ValueError("AMT_INCOME_TOTAL doit être strictement supérieur à 0.")
 
+        # Contrôle sur les scores externes
         for ext_col in ["EXT_SOURCE_1", "EXT_SOURCE_2", "EXT_SOURCE_3"]:
             if ext_col in v and v[ext_col] is not None:
-                val = float(v[ext_col])
+                try:
+                    val = float(v[ext_col])
+                except (ValueError, TypeError):
+                    raise ValueError(f"{ext_col} doit être un nombre valide.")
                 if not (0.0 <= val <= 1.0):
                     raise ValueError(f"{ext_col} doit être compris entre 0.0 et 1.0 (reçu : {val}).")
 

@@ -23,55 +23,79 @@ MODEL_STATE: Dict[str, Any] = {
     "run_id": None
 }
 
-
 def load_champion_model_and_threshold():
     """Récupère le modèle et son seuil optimal directement depuis MLflow."""
+    # 1. Localisation de la base de métadonnées SQLite
     db_path = BASE_DIR / "data" / "mlflow" / "metadata.db"
-    sqlite_uri = f"sqlite:///{db_path.as_posix()}"
+    if not db_path.exists():
+        fallback_db = BASE_DIR.parent / "5_MLOps_Part1" / "data" / "mlflow" / "metadata.db"
+        if fallback_db.exists():
+            db_path = fallback_db
+
+    sqlite_uri = f"sqlite:///{db_path.resolve().as_posix()}"
     mlflow.set_tracking_uri(sqlite_uri)
     client = MlflowClient()
 
-    # 1. Récupération des métadonnées du modèle 'prod'
+    # 2. Récupération des métadonnées du modèle 'prod'
     version_prod = client.get_model_version_by_alias("CreditScoringModel", "prod")
     run_id = version_prod.run_id
     raw_source = version_prod.source
 
-    # 2. Récupération dynamique du seuil sauvegardé dans MLflow
+    # 3. Récupération du seuil métier
     run_data = client.get_run(run_id).data
-    # On cherche en priorité la métrique 'final_optimal_threshold', sinon fallback sur 0.54
-    optimal_threshold = run_data.metrics.get("optimal_threshold", 0.5)
+    optimal_threshold = (
+        run_data.metrics.get("final_optimal_threshold")
+        or run_data.metrics.get("optimal_threshold")
+        or 0.4747
+    )
 
-    # 3. Localisation physique du dossier du modèle
+    # 4. Recherche physique des artefacts MLmodel
     clean_source = urllib.parse.unquote(raw_source).replace("\\", "/")
     folder_ids = [run_id] + [p for p in clean_source.split("/") if p.startswith("m-") or len(p) == 32]
 
+    dossiers_recherche = [
+        BASE_DIR / "data" / "mlflow",
+        BASE_DIR,
+        BASE_DIR.parent / "5_MLOps_Part1" / "data" / "mlflow",
+    ]
+
     local_model_path = None
-    mlmodel_files = list(BASE_DIR.rglob("MLmodel"))
-    for mlm in mlmodel_files:
-        str_path = str(mlm.resolve()).replace("\\", "/")
-        if any(fid in str_path for fid in folder_ids if fid):
-            local_model_path = mlm.parent
+    for dossier in dossiers_recherche:
+        if dossier.exists():
+            for mlm in dossier.rglob("MLmodel"):
+                str_path = str(mlm.resolve()).replace("\\", "/")
+                if any(fid in str_path for fid in folder_ids if fid):
+                    local_model_path = mlm.parent
+                    break
+        if local_model_path:
             break
 
-    if local_model_path is None and mlmodel_files:
-        mlmodel_files.sort(key=lambda x: x.stat().st_mtime)
-        local_model_path = mlmodel_files[-1].parent
+    # Fallback sur le MLmodel le plus récent si non trouvé par ID
+    if local_model_path is None:
+        candidats = []
+        for dossier in dossiers_recherche:
+            if dossier.exists():
+                candidats.extend(list(dossier.rglob("MLmodel")))
+        if candidats:
+            candidats.sort(key=lambda x: x.stat().st_mtime)
+            local_model_path = candidats[-1].parent
 
     if local_model_path is None or not local_model_path.exists():
-        raise RuntimeError("Impossible de localiser physiquement le modèle sur le disque.")
+        raise RuntimeError("Impossible de localiser le modèle MLmodel sur le disque.")
 
-    # 4. Chargement du modèle avec l'URI sécurisée
-    chemin_posix = local_model_path.resolve().as_posix()
-    model_uri = f"file:///{chemin_posix}"
-    model = mlflow.lightgbm.load_model(model_uri)
+    # 5. Chargement multi-OS (tente d'abord le chemin direct, puis l'URI file:///)
+    try:
+        model = mlflow.lightgbm.load_model(str(local_model_path.resolve()))
+    except Exception:
+        uri = f"file:///{local_model_path.resolve().as_posix()}"
+        model = mlflow.lightgbm.load_model(uri)
 
-    # 5. Extraction de la liste des variables d'entraînement
+    # 6. Extraction des variables attendues
     feature_names = getattr(model, "feature_name_", None)
     if feature_names is None and hasattr(model, "booster_"):
         feature_names = model.booster_.feature_name()
 
     return model, feature_names, float(optimal_threshold), run_id
-
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
@@ -138,10 +162,7 @@ def predict(payload: ClientInput):
 
         # Alignement strict sur les variables du modèle
         if feature_names:
-            for col in feature_names:
-                if col not in df_client.columns:
-                    df_client[col] = np.nan
-            df_client = df_client[feature_names]
+            df_client = df_client.reindex(columns=feature_names)
 
         # Inférence de la probabilité de faillite (classe 1)
         proba_defaut = float(model.predict_proba(df_client)[0][1])
