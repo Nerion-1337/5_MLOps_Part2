@@ -12,6 +12,9 @@ from mlflow.tracking import MlflowClient
 
 from api.schemas import ClientInput, PredictionResponse
 
+import time
+from api.logging_config import log_prediction_event
+
 # Racine du projet
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -140,7 +143,8 @@ def health():
 
 @app.post("/predict", response_model=PredictionResponse, tags=["Scoring"])
 def predict(payload: ClientInput):
-    """Exécute l'inférence pour un profil client."""
+    """Reçoit les données du client et retourne la prédiction."""
+    start_time = time.perf_counter()
     model = MODEL_STATE["model"]
     feature_names = MODEL_STATE["feature_names"]
     threshold = MODEL_STATE["optimal_threshold"]
@@ -152,23 +156,47 @@ def predict(payload: ClientInput):
         )
 
     try:
-        # Transformation du payload JSON en DataFrame
+        # 1. Construction du DataFrame initial
         df_client = pd.DataFrame([payload.features])
 
-        # Suppression des colonnes interdites à l'inférence
-        for col_to_remove in ["TARGET", "SK_ID_CURR"]:
-            if col_to_remove in df_client.columns:
-                df_client = df_client.drop(columns=[col_to_remove])
+        # 2. Suppression des colonnes non prédictives
+        cols_drop = [c for c in ["TARGET", "SK_ID_CURR", "index"] if c in df_client.columns]
+        if cols_drop:
+            df_client = df_client.drop(columns=cols_drop)
 
-        # Alignement strict sur les variables du modèle
+        # 3. Alignement strict sur les features de référence
         if feature_names:
             df_client = df_client.reindex(columns=feature_names)
 
-        # Inférence de la probabilité de faillite (classe 1)
-        proba_defaut = float(model.predict_proba(df_client)[0][1])
+        # 4. Correction du typage : conversion stricte en numérique float64 pour LightGBM
+        for col in df_client.columns:
+            df_client[col] = pd.to_numeric(df_client[col], errors="coerce")
+        df_client = df_client.astype(np.float64)
 
-        # Décision selon le seuil métier issu de MLflow
+        # 5. Inférence LightGBM
+        proba_defaut = float(model.predict_proba(df_client)[0][1])
         decision = "REFUSE" if proba_defaut >= threshold else "ACCORDE"
+        latency_ms = (time.perf_counter() - start_time) * 1000.0
+
+        # 6. Préparation des logs sérialisables en JSON
+        serializable_features = {}
+        for k, v in payload.features.items():
+            if pd.isna(v) or v is None:
+                serializable_features[k] = None
+            elif hasattr(v, "item"):
+                serializable_features[k] = v.item()
+            else:
+                serializable_features[k] = v
+
+        log_prediction_event(
+            client_id=payload.client_id,
+            features=serializable_features,
+            probability=round(proba_defaut, 4),
+            threshold=threshold,
+            decision=decision,
+            latency_ms=latency_ms,
+            status_code=200,
+        )
 
         return PredictionResponse(
             client_id=payload.client_id,
@@ -177,7 +205,11 @@ def predict(payload: ClientInput):
             decision=decision,
             status="SUCCESS"
         )
+    except HTTPException:
+        raise
     except Exception as e:
+        import traceback
+        traceback.print_exc()
         raise HTTPException(
             status_code=status.HTTP_400_BAD_REQUEST,
             detail=f"Erreur d'inférence : {str(e)}"
