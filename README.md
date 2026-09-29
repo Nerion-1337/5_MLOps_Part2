@@ -45,23 +45,32 @@ Ce dépôt contient l'infrastructure de **mise en production**, de **conteneuris
 │   ├── main.py                   # API FastAPI (chargement unique, moteur ONNX)
 │   ├── schemas.py                # Schémas Pydantic (validation des inputs et types)
 │   └── logging_config.py         # Module de logging structuré JSONL
+├── app/
+│   ├── streamlit.py              # Module streamlit
 ├── data/
 │   ├── mlflow/                   # Métadonnées SQLite et artefacts MLflow
 │   ├── processed/                # Datasets de référence
 │   └── production/               # Logs d'inférence temps réel (api_predictions.jsonl)
-├── img/
+│   └── raw/                      # Donnée brut
+├── docs/
 │   ├── architecture.svg          # Schéma d'architecture MLOps
 │   └── uml_classes.svg           # Diagramme UML des modules
 ├── monitoring/
 │   ├── drift_analysis.py         # Script d'analyse du Data Drift (Evidently AI)
 │   ├── dashboard_monitoring.py   # Dashboard Streamlit de suivi des métriques
 │   └── reports/                  # Rapport HTML Evidently généré
+├── notebooks/
+│   ├── 01_exploration_nettoyage.ipynb  # EDA, encodage mixte, gestion des NaN et anomalies
+│   ├── 02_entrainement_mlflow.ipynb    # Modélisation, 5-Fold CV, Optuna, seuil et logs
+│   └── 03_creation_dataset.ipynb       # Génération de l'échantillon de test
 ├── optimization/
 │   ├── export_onnx.py            # Script d'export LightGBM -> ONNX
 │   ├── profiling.py              # Script de profilage cProfile et benchmark
 │   ├── credit_scoring_model.onnx # Modèle sérialisé ONNX
 │   └── optimization_report.txt   # Résultats comparatifs de latence
 ├── test/
+│   └── serving_mlflow.py         # Script d'appel HTTP sur l'endpoint /invocations
+│   └── simulate_traffic.py       # Client de test : envoie 10 clients réels à /predict
 │   └── test_api.py               # Tests unitaires Pytest (7 tests de robustesse)
 ├── Dockerfile                    # Conteneurisation de l'API
 ├── docker-compose.yml            # Déploiement local orchestré
