@@ -1,111 +1,168 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 540" font-family="Consolas, Menlo, monospace" font-size="13" xmlns:c2pa="http://c2pa.org/manifest"><metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTplNmM4ODA5MC1kOGUzLTRiMzctOTczOS05YjgwZjc5MmQxYmMAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaFwLCev6UzWd+vlFB54p8n4AAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDplNzExOTYwMy01ZTA4LTQ3N2ItOTc3Zi1kMTQxZTMzMTM5YzJscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNoX8EVBAyMTrRnGzgE7j40UAAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFggj+aIj3UIcFnkbdPmSdfphegIXuH9bPzP0yNYXButf9ekZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaFQpjTjMTW0Hi/Aoo7rTeQQAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRNAAAAAAAAAAAAAAAAAGRoYXNoWCAKQsMhBvQCZLl+cEWbF/CN+n0yj2c0d3fYKJomLoY5A2RuYW1lbmp1bWJmIG1hbmlmZXN0amV4Y2x1c2lvbnOBomVzdGFydBi1Zmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOmU2Yzg4MDkwLWQ4ZTMtNGIzNy05NzM5LTliODBmNzkyZDFiYy9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOjE2ZmFmYTM0LWI5MmMtNDA1OC05ZGIxLTg0MGY4MDliMDUwN3JjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCCP5oiPdQhwWeRt0+ZJ1+mF6Ahe4f1s/M/TI1hcG61/16JjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFggjBibi206C6y3mBDOoolRet639TK+Pw6x8XUQVIjVkhOiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFggeIljuqd11JXdPFzFLjCbBEj+XkfhnBuDb52YKzGUURB0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQP6YvT1MXE72+H0ojSe1hMB3Tar2V14nDouGlwe8Y/Ii8Df/MxlFBrZgBo4rXqJEjaQpq8CdSblQDwmaCkb2CqE=</c2pa:manifest></metadata>
-  <defs>
-    <marker id="o" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
-      <path d="M0,0 L10,5 L0,10" fill="none" stroke="#334155" stroke-width="1.5"/>
-    </marker>
-    <marker id="s" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
-      <path d="M0,0 L10,5 L0,10 z" fill="#334155"/>
-    </marker>
-  </defs>
-  <rect width="900" height="540" fill="#ffffff"/>
-  <text x="450" y="20" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="bold" fill="#0f172a">Diagramme UML – Structure logique du projet</text>
-
-  <!-- PredictionRequest -->
-  <g>
-    <rect x="30" y="40" width="220" height="100" fill="#fefce8" stroke="#ca8a04" stroke-width="2"/>
-    <rect x="30" y="40" width="220" height="30" fill="#fde68a" stroke="#ca8a04" stroke-width="2"/>
-    <text x="140" y="60" text-anchor="middle" font-weight="bold" fill="#713f12">PredictionRequest</text>
-    <text x="40" y="88" fill="#1e293b">«BaseModel» schemas.py</text>
-    <text x="40" y="108" fill="#1e293b">+ features : float</text>
-    <text x="40" y="126" fill="#1e293b">+ validation des types</text>
-  </g>
-
-  <!-- FastAPI -->
-  <g>
-    <rect x="340" y="40" width="240" height="130" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
-    <rect x="340" y="40" width="240" height="30" fill="#bbf7d0" stroke="#16a34a" stroke-width="2"/>
-    <text x="460" y="60" text-anchor="middle" font-weight="bold" fill="#14532d">FastAPI (main.py)</text>
-    <text x="350" y="88" fill="#1e293b">- session : InferenceSession</text>
-    <line x1="340" y1="98" x2="580" y2="98" stroke="#16a34a"/>
-    <text x="350" y="118" fill="#1e293b">+ health()</text>
-    <text x="350" y="138" fill="#1e293b">+ predict(req)</text>
-    <text x="350" y="158" fill="#1e293b">+ load_model()</text>
-  </g>
-
-  <!-- PredictionResponse -->
-  <g>
-    <rect x="670" y="40" width="200" height="100" fill="#fefce8" stroke="#ca8a04" stroke-width="2"/>
-    <rect x="670" y="40" width="200" height="30" fill="#fde68a" stroke="#ca8a04" stroke-width="2"/>
-    <text x="770" y="60" text-anchor="middle" font-weight="bold" fill="#713f12">PredictionResponse</text>
-    <text x="680" y="88" fill="#1e293b">«BaseModel»</text>
-    <text x="680" y="108" fill="#1e293b">+ probability : float</text>
-    <text x="680" y="126" fill="#1e293b">+ decision : str</text>
-  </g>
-
-  <!-- OnnxExporter -->
-  <g>
-    <rect x="30" y="240" width="220" height="100" fill="#f5f3ff" stroke="#7c3aed" stroke-width="2"/>
-    <rect x="30" y="240" width="220" height="30" fill="#ddd6fe" stroke="#7c3aed" stroke-width="2"/>
-    <text x="140" y="260" text-anchor="middle" font-weight="bold" fill="#4c1d95">export_onnx.py</text>
-    <text x="40" y="288" fill="#1e293b">+ export(lgbm_model)</text>
-    <text x="40" y="308" fill="#1e293b">+ check_parity()</text>
-    <text x="40" y="328" fill="#1e293b">  écart max ≤ 5e-8</text>
-  </g>
-
-  <!-- JsonlLogger -->
-  <g>
-    <rect x="340" y="240" width="240" height="100" fill="#fff7ed" stroke="#ea580c" stroke-width="2"/>
-    <rect x="340" y="240" width="240" height="30" fill="#fed7aa" stroke="#ea580c" stroke-width="2"/>
-    <text x="460" y="260" text-anchor="middle" font-weight="bold" fill="#7c2d12">logging_config.py</text>
-    <text x="350" y="288" fill="#1e293b">- path : api_predictions.jsonl</text>
-    <text x="350" y="310" fill="#1e293b">+ log_prediction(features,</text>
-    <text x="350" y="328" fill="#1e293b">    score, latency_ms)</text>
-  </g>
-
-  <!-- Profiler -->
-  <g>
-    <rect x="670" y="240" width="200" height="100" fill="#f5f3ff" stroke="#7c3aed" stroke-width="2"/>
-    <rect x="670" y="240" width="200" height="30" fill="#ddd6fe" stroke="#7c3aed" stroke-width="2"/>
-    <text x="770" y="260" text-anchor="middle" font-weight="bold" fill="#4c1d95">profiling.py</text>
-    <text x="680" y="288" fill="#1e293b">+ run_cprofile()</text>
-    <text x="680" y="308" fill="#1e293b">+ benchmark()</text>
-    <text x="680" y="328" fill="#1e293b">→ optimization_report</text>
-  </g>
-
-  <!-- DriftAnalysis -->
-  <g>
-    <rect x="190" y="410" width="250" height="100" fill="#fdf2f8" stroke="#db2777" stroke-width="2"/>
-    <rect x="190" y="410" width="250" height="30" fill="#fbcfe8" stroke="#db2777" stroke-width="2"/>
-    <text x="315" y="430" text-anchor="middle" font-weight="bold" fill="#831843">drift_analysis.py</text>
-    <text x="200" y="458" fill="#1e293b">+ load_reference()</text>
-    <text x="200" y="478" fill="#1e293b">+ load_production()</text>
-    <text x="200" y="498" fill="#1e293b">+ run_report() → HTML</text>
-  </g>
-
-  <!-- Dashboard -->
-  <g>
-    <rect x="500" y="410" width="260" height="100" fill="#fef2f2" stroke="#dc2626" stroke-width="2"/>
-    <rect x="500" y="410" width="260" height="30" fill="#fecaca" stroke="#dc2626" stroke-width="2"/>
-    <text x="630" y="430" text-anchor="middle" font-weight="bold" fill="#7f1d1d">dashboard_monitoring.py</text>
-    <text x="510" y="458" fill="#1e293b">+ show_volume()</text>
-    <text x="510" y="478" fill="#1e293b">+ show_proba_and_latency()</text>
-    <text x="510" y="498" fill="#1e293b">+ embed_evidently_report()</text>
-  </g>
-
-  <!-- Relations -->
-  <line x1="340" y1="95" x2="250" y2="95" stroke="#334155" stroke-width="1.5" stroke-dasharray="6 4" marker-end="url(#o)"/>
-  <text x="295" y="88" text-anchor="middle" font-size="11" fill="#334155">«uses»</text>
-  <line x1="580" y1="95" x2="670" y2="95" stroke="#334155" stroke-width="1.5" stroke-dasharray="6 4" marker-end="url(#o)"/>
-  <text x="625" y="88" text-anchor="middle" font-size="11" fill="#334155">«returns»</text>
-  <line x1="460" y1="170" x2="460" y2="240" stroke="#334155" stroke-width="1.5" marker-end="url(#s)"/>
-  <text x="470" y="210" font-size="11" fill="#334155">log</text>
-  <line x1="250" y1="265" x2="340" y2="150" stroke="#334155" stroke-width="1.5" stroke-dasharray="6 4" marker-end="url(#o)"/>
-  <text x="260" y="200" font-size="11" fill="#334155">modèle .onnx</text>
-  <line x1="670" y1="265" x2="580" y2="150" stroke="#334155" stroke-width="1.5" stroke-dasharray="6 4" marker-end="url(#o)"/>
-  <text x="640" y="200" font-size="11" fill="#334155">benchmark</text>
-  <line x1="400" y1="340" x2="340" y2="410" stroke="#334155" stroke-width="1.5" marker-end="url(#s)"/>
-  <line x1="520" y1="340" x2="600" y2="410" stroke="#334155" stroke-width="1.5" marker-end="url(#s)"/>
-  <text x="370" y="385" font-size="11" fill="#334155">lit JSONL</text>
-  <line x1="440" y1="460" x2="500" y2="460" stroke="#334155" stroke-width="1.5" stroke-dasharray="6 4" marker-end="url(#o)"/>
-  <text x="470" y="452" text-anchor="middle" font-size="11" fill="#334155">HTML</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1015 874" xmlns:c2pa="http://c2pa.org/manifest"><metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTo1NWNjYTAxNC0wNmM4LTQyY2ItYTFlYS0xMTU4MDJhNzc4M2IAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaFW//wfNpsF9VeMFq3RNflcAAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDo3Yzc0NGIwOS0xMDc2LTQ4ZWQtYTBmNS03YmEyODM5Yzk5OGVscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNo24vDejLeZ4hVCnHYWA5dqgAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFggK3V3elQFFjpIIkQ1/HT47CiEquc/gkaSJODGVZLeorykZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaKzmDFXMh440jmZV+uRsE0UAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRNAAAAAAAAAAAAAAAAAGRoYXNoWCBGt/auLacqMYhYs6xQfAQTewzJffocf9tCKeUEvBQHI2RuYW1lbmp1bWJmIG1hbmlmZXN0amV4Y2x1c2lvbnOBomVzdGFydBh+Zmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOjU1Y2NhMDE0LTA2YzgtNDJjYi1hMWVhLTExNTgwMmE3NzgzYi9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOjEyZGM1NjRiLWE5ZDgtNDIwYy05MjRhLTdiNzMyNWI2MGU5NnJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCArdXd6VAUWOkgiRDX8dPjsKISq5z+CRpIk4MZVkt6ivKJjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFggm0FVthNX9o7PRatnWxn3R++WwM48WUhIe3Lw9L6Ia4CiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFggMQh57oS2gANiJqKdD5TFaCHqS5GW3k6T0m4Qy9nfm0R0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQG4avPp/I+dAYO5AkCS2bZmhCbMeD3Paaj+zjb5zoO252yPdX2R6OPhdbHhs4OrdQfxrn/9hSr4a5+ibbCyRIX4=</c2pa:manifest></metadata><defs>
+<marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+<marker id="o" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10" fill="none" stroke="#334155" stroke-width="1.5"/></marker>
+</defs><rect width="1015" height="874" fill="#ffffff"/><text x="507" y="22" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="bold" fill="#0f172a">Diagramme UML — Structure logique du projet</text><rect x="10" y="58" width="230" height="114" fill="#f0fdfa" stroke="#0d9488" stroke-width="2"/>
+<rect x="10" y="58" width="230" height="28" fill="#99f6e4" stroke="#0d9488" stroke-width="2"/>
+<text x="125.0" y="77" text-anchor="middle" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="12.5" font-weight="bold" fill="#0f172a">03_creation_dataset</text>
+<text x="18" y="105" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="12" font-style="italic" fill="#64748b">«notebook»</text>
+<text x="18" y="122" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="12" fill="#1e293b">→ X_test_sample.parquet</text>
+<line x1="10" y1="129" x2="240" y2="129" stroke="#0d9488"/>
+<text x="18" y="145" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="12" fill="#1e293b">+ extraire_echantillon(50)</text>
+<text x="18" y="162" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="12" fill="#1e293b">+ indexer(SK_ID_CURR)</text>
+<rect x="265" y="58" width="230" height="131" fill="#f0fdfa" stroke="#0d9488" stroke-width="2"/>
+<rect x="265" y="58" width="230" height="28" fill="#99f6e4" stroke="#0d9488" stroke-width="2"/>
+<text x="380.0" y="77" text-anchor="middle" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="12.5" font-weight="bold" fill="#0f172a">01_exploration_nettoyage</text>
+<text x="273" y="105" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="12" font-style="italic" fill="#64748b">«notebook»</text>
+<text x="273" y="122" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="12" fill="#1e293b">→ dataset_train_fusion</text>
+<line x1="265" y1="129" x2="495" y2="129" stroke="#0d9488"/>
+<text x="273" y="145" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="12" fill="#1e293b">+ fusionner_tables()</text>
+<text x="273" y="162" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="12" fill="#1e293b">+ traiter_NaN_anomalies()</text>
+<text x="273" y="179" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="12" fill="#1e293b">+ encoder_variables()</text>
+<rect x="520" y="58" width="230" height="165" fill="#f0fdfa" stroke="#0d9488" stroke-width="2"/>
+<rect x="520" y="58" width="230" height="28" fill="#99f6e4" stroke="#0d9488" stroke-width="2"/>
+<text x="635.0" y="77" text-anchor="middle" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="12.5" font-weight="bold" fill="#0f172a">02_entrainement_mlflow</text>
+<text x="528" y="105" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="12" font-style="italic" fill="#64748b">«notebook»</text>
+<text x="528" y="122" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="12" fill="#1e293b">- coût = 10·FN + 1·FP</text>
+<text x="528" y="139" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="12" fill="#1e293b">- seuil = 0,54</text>
+<line x1="520" y1="146" x2="750" y2="146" stroke="#0d9488"/>
+<text x="528" y="162" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="12" fill="#1e293b">+ cv_stratifiee(k=5)</text>
+<text x="528" y="179" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="12" fill="#1e293b">+ optuna_search()</text>
+<text x="528" y="196" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="12" fill="#1e293b">+ optimiser_seuil()</text>
+<text x="528" y="213" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="12" fill="#1e293b">+ enregistrer_champion()</text>
+<rect x="775" y="58" width="230" height="114" fill="#eff6ff" stroke="#2563eb" stroke-width="2"/>
+<rect x="775" y="58" width="230" height="28" fill="#bfdbfe" stroke="#2563eb" stroke-width="2"/>
+<text x="890.0" y="77" text-anchor="middle" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="12.5" font-weight="bold" fill="#0f172a">MLflow Registry</text>
+<text x="783" y="105" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="12" font-style="italic" fill="#64748b">«data/mlflow/metadata.db»</text>
+<text x="783" y="122" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="12" fill="#1e293b">- CreditScoringModel@prod</text>
+<line x1="775" y1="129" x2="1005" y2="129" stroke="#2563eb"/>
+<text x="783" y="145" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="12" fill="#1e293b">+ log_params_metrics()</text>
+<text x="783" y="162" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="12" fill="#1e293b">+ charger_modele(alias)</text>
+<rect x="10" y="281" width="230" height="97" fill="#f0f9ff" stroke="#0284c7" stroke-width="2"/>
+<rect x="10" y="281" width="230" height="28" fill="#bae6fd" stroke="#0284c7" stroke-width="2"/>
+<text x="125.0" y="300" text-anchor="middle" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="12.5" font-weight="bold" fill="#0f172a">test_api.py</text>
+<text x="18" y="328" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="12" font-style="italic" fill="#64748b">«pytest»</text>
+<text x="18" y="345" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="12" fill="#1e293b">- cible : API FastAPI</text>
+<line x1="10" y1="352" x2="240" y2="352" stroke="#0284c7"/>
+<text x="18" y="368" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="12" fill="#1e293b">+ 7 tests de robustesse</text>
+<rect x="265" y="281" width="230" height="114" fill="#f0f9ff" stroke="#0284c7" stroke-width="2"/>
+<rect x="265" y="281" width="230" height="28" fill="#bae6fd" stroke="#0284c7" stroke-width="2"/>
+<text x="380.0" y="300" text-anchor="middle" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="12.5" font-weight="bold" fill="#0f172a">simulate_traffic.py</text>
+<text x="273" y="328" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="12" fill="#1e293b">- source : X_test_sample</text>
+<text x="273" y="345" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="12" fill="#1e293b">- url : :8000/predict</text>
+<line x1="265" y1="352" x2="495" y2="352" stroke="#0284c7"/>
+<text x="273" y="368" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="12" fill="#1e293b">+ nettoyer_features()</text>
+<text x="273" y="385" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="12" fill="#1e293b">+ envoyer_requetes(n=10)</text>
+<rect x="520" y="281" width="230" height="80" fill="#f0f9ff" stroke="#0284c7" stroke-width="2"/>
+<rect x="520" y="281" width="230" height="28" fill="#bae6fd" stroke="#0284c7" stroke-width="2"/>
+<text x="635.0" y="300" text-anchor="middle" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="12.5" font-weight="bold" fill="#0f172a">serving_mlflow.py</text>
+<text x="528" y="328" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="12" fill="#1e293b">- url : :5002/invocations</text>
+<line x1="520" y1="335" x2="750" y2="335" stroke="#0284c7"/>
+<text x="528" y="351" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="12" fill="#1e293b">+ appeler_invocations()</text>
+<rect x="775" y="281" width="230" height="165" fill="#fef2f2" stroke="#dc2626" stroke-width="2"/>
+<rect x="775" y="281" width="230" height="28" fill="#fecaca" stroke="#dc2626" stroke-width="2"/>
+<text x="890.0" y="300" text-anchor="middle" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="12.5" font-weight="bold" fill="#0f172a">streamlit.py (app/)</text>
+<text x="783" y="328" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="12" fill="#1e293b">- modèle : @prod</text>
+<text x="783" y="345" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="12" fill="#1e293b">- seuil = 0,54</text>
+<text x="783" y="362" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="12" fill="#1e293b">- données : X_test_sample</text>
+<line x1="775" y1="369" x2="1005" y2="369" stroke="#dc2626"/>
+<text x="783" y="385" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="12" fill="#1e293b">+ choisir_client(SK_ID_CURR)</text>
+<text x="783" y="402" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="12" fill="#1e293b">+ predire()</text>
+<text x="783" y="419" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="12" fill="#1e293b">+ shap_local()</text>
+<text x="783" y="436" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="12" fill="#1e293b">+ shap_global()</text>
+<rect x="10" y="504" width="230" height="114" fill="#f5f3ff" stroke="#7c3aed" stroke-width="2"/>
+<rect x="10" y="504" width="230" height="28" fill="#ddd6fe" stroke="#7c3aed" stroke-width="2"/>
+<text x="125.0" y="523" text-anchor="middle" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="12.5" font-weight="bold" fill="#0f172a">export_onnx.py</text>
+<text x="18" y="551" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="12" fill="#1e293b">→ credit_scoring_model.onnx</text>
+<text x="18" y="568" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="12" fill="#1e293b">- tolérance = 5e-8</text>
+<line x1="10" y1="575" x2="240" y2="575" stroke="#7c3aed"/>
+<text x="18" y="591" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="12" fill="#1e293b">+ exporter(lightgbm)</text>
+<text x="18" y="608" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="12" fill="#1e293b">+ verifier_parite()</text>
+<rect x="265" y="504" width="230" height="131" fill="#ecfdf5" stroke="#059669" stroke-width="2"/>
+<rect x="265" y="504" width="230" height="28" fill="#a7f3d0" stroke="#059669" stroke-width="2"/>
+<text x="380.0" y="523" text-anchor="middle" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="12.5" font-weight="bold" fill="#0f172a">FastAPI (main.py)</text>
+<text x="273" y="551" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="12" fill="#1e293b">- session : InferenceSession</text>
+<text x="273" y="568" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="12" fill="#1e293b">- port : 8000</text>
+<line x1="265" y1="575" x2="495" y2="575" stroke="#059669"/>
+<text x="273" y="591" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="12" fill="#1e293b">+ health()</text>
+<text x="273" y="608" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="12" fill="#1e293b">+ predict(req)</text>
+<text x="273" y="625" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="12" fill="#1e293b">+ load_model()</text>
+<rect x="520" y="504" width="230" height="80" fill="#fff7ed" stroke="#ea580c" stroke-width="2"/>
+<rect x="520" y="504" width="230" height="28" fill="#fed7aa" stroke="#ea580c" stroke-width="2"/>
+<text x="635.0" y="523" text-anchor="middle" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="12.5" font-weight="bold" fill="#0f172a">logging_config.py</text>
+<text x="528" y="551" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="12" fill="#1e293b">→ api_predictions.jsonl</text>
+<line x1="520" y1="558" x2="750" y2="558" stroke="#ea580c"/>
+<text x="528" y="574" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="12" fill="#1e293b">+ log_prediction(...)</text>
+<rect x="775" y="504" width="230" height="97" fill="#fdf2f8" stroke="#db2777" stroke-width="2"/>
+<rect x="775" y="504" width="230" height="28" fill="#fbcfe8" stroke="#db2777" stroke-width="2"/>
+<text x="890.0" y="523" text-anchor="middle" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="12.5" font-weight="bold" fill="#0f172a">drift_analysis.py</text>
+<text x="783" y="551" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="12" fill="#1e293b">- ref : data/processed</text>
+<text x="783" y="568" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="12" fill="#1e293b">- prod : predictions.jsonl</text>
+<line x1="775" y1="575" x2="1005" y2="575" stroke="#db2777"/>
+<text x="783" y="591" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="12" fill="#1e293b">+ run_report() → HTML</text>
+<rect x="10" y="693" width="230" height="97" fill="#f5f3ff" stroke="#7c3aed" stroke-width="2"/>
+<rect x="10" y="693" width="230" height="28" fill="#ddd6fe" stroke="#7c3aed" stroke-width="2"/>
+<text x="125.0" y="712" text-anchor="middle" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="12.5" font-weight="bold" fill="#0f172a">profiling.py</text>
+<text x="18" y="740" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="12" fill="#1e293b">→ optimization_report.txt</text>
+<line x1="10" y1="747" x2="240" y2="747" stroke="#7c3aed"/>
+<text x="18" y="763" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="12" fill="#1e293b">+ run_cprofile()</text>
+<text x="18" y="780" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="12" fill="#1e293b">+ benchmark()</text>
+<rect x="265" y="693" width="230" height="108" fill="#fefce8" stroke="#ca8a04" stroke-width="2"/>
+<rect x="265" y="693" width="230" height="28" fill="#fde68a" stroke="#ca8a04" stroke-width="2"/>
+<text x="380.0" y="712" text-anchor="middle" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="12.5" font-weight="bold" fill="#0f172a">PredictionRequest</text>
+<text x="273" y="740" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="12" font-style="italic" fill="#64748b">«BaseModel» schemas.py</text>
+<text x="273" y="757" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="12" fill="#1e293b">+ client_id : int</text>
+<text x="273" y="774" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="12" fill="#1e293b">+ features : dict</text>
+<text x="273" y="791" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="12" fill="#1e293b">   (valeurs float | None)</text>
+<rect x="520" y="693" width="230" height="91" fill="#fefce8" stroke="#ca8a04" stroke-width="2"/>
+<rect x="520" y="693" width="230" height="28" fill="#fde68a" stroke="#ca8a04" stroke-width="2"/>
+<text x="635.0" y="712" text-anchor="middle" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="12.5" font-weight="bold" fill="#0f172a">PredictionResponse</text>
+<text x="528" y="740" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="12" font-style="italic" fill="#64748b">«BaseModel» schemas.py</text>
+<text x="528" y="757" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="12" fill="#1e293b">+ probability : float</text>
+<text x="528" y="774" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="12" fill="#1e293b">+ decision : str</text>
+<rect x="775" y="693" width="230" height="131" fill="#fdf2f8" stroke="#db2777" stroke-width="2"/>
+<rect x="775" y="693" width="230" height="28" fill="#fbcfe8" stroke="#db2777" stroke-width="2"/>
+<text x="890.0" y="712" text-anchor="middle" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="12.5" font-weight="bold" fill="#0f172a">dashboard_monitoring.py</text>
+<text x="783" y="740" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="12" fill="#1e293b">- source : JSONL + HTML</text>
+<line x1="775" y1="747" x2="1005" y2="747" stroke="#db2777"/>
+<text x="783" y="763" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="12" fill="#1e293b">+ volume_requetes()</text>
+<text x="783" y="780" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="12" fill="#1e293b">+ distribution_proba()</text>
+<text x="783" y="797" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="12" fill="#1e293b">+ latence()</text>
+<text x="783" y="814" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="12" fill="#1e293b">+ embed_evidently()</text>
+<line x1="265" y1="72" x2="240" y2="72" stroke="#334155" stroke-width="1.6" marker-end="url(#a)"/>
+<line x1="495" y1="72" x2="520" y2="72" stroke="#334155" stroke-width="1.6" marker-end="url(#a)"/>
+<line x1="750" y1="72" x2="775" y2="72" stroke="#334155" stroke-width="1.6" marker-end="url(#a)"/>
+<line x1="890.0" y1="172" x2="890.0" y2="281" stroke="#334155" stroke-width="1.6" marker-end="url(#a)"/>
+<rect x="893.0" y="215.5" width="79.92" height="16" fill="#fff"/>
+<text x="896.0" y="226.5" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#334155">charge @prod</text>
+<line x1="850.0" y1="172" x2="695.0" y2="281" stroke="#334155" stroke-width="1.6" marker-end="url(#a)"/>
+<rect x="710.98" y="219.5" width="123.04" height="16" fill="#fff"/>
+<text x="772.5" y="230.5" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#334155">mlflow models serve</text>
+<line x1="380.0" y1="395" x2="380.0" y2="504" stroke="#334155" stroke-width="1.6" stroke-dasharray="6 4" marker-end="url(#o)"/>
+<rect x="383.0" y="438.5" width="86.08000000000001" height="16" fill="#fff"/>
+<text x="386.0" y="449.5" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#334155">POST /predict</text>
+<line x1="125.0" y1="378" x2="310.0" y2="504" stroke="#334155" stroke-width="1.6" stroke-dasharray="6 4" marker-end="url(#o)"/>
+<rect x="196.02" y="434.0" width="42.96" height="16" fill="#fff"/>
+<text x="217.5" y="445.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#334155">pytest</text>
+<line x1="240" y1="518" x2="265" y2="518" stroke="#334155" stroke-width="1.6" stroke-dasharray="6 4" marker-end="url(#o)"/>
+<line x1="495" y1="518" x2="520" y2="518" stroke="#334155" stroke-width="1.6" marker-end="url(#a)"/>
+<line x1="750" y1="518" x2="775" y2="518" stroke="#334155" stroke-width="1.6" marker-end="url(#a)"/>
+<line x1="335.0" y1="635" x2="335.0" y2="693" stroke="#334155" stroke-width="1.6" stroke-dasharray="6 4" marker-end="url(#o)"/>
+<rect x="338.0" y="653.0" width="42.96" height="16" fill="#fff"/>
+<text x="341.0" y="664.0" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#334155">valide</text>
+<line x1="430.0" y1="635" x2="575.0" y2="693" stroke="#334155" stroke-width="1.6" stroke-dasharray="6 4" marker-end="url(#o)"/>
+<rect x="474.86" y="649.0" width="55.28" height="16" fill="#fff"/>
+<text x="502.5" y="660.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#334155">retourne</text>
+<line x1="185.0" y1="693" x2="290.0" y2="635" stroke="#334155" stroke-width="1.6" stroke-dasharray="6 4" marker-end="url(#o)"/>
+<rect x="175.06" y="653.0" width="61.440000000000005" height="16" fill="#fff"/>
+<text x="233.5" y="664.0" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#334155">benchmark</text>
+<line x1="890.0" y1="601" x2="890.0" y2="693" stroke="#334155" stroke-width="1.6" stroke-dasharray="6 4" marker-end="url(#o)"/>
+<rect x="893.0" y="636.0" width="79.92" height="16" fill="#fff"/>
+<text x="896.0" y="647.0" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#334155">rapport HTML</text>
+<line x1="695.0" y1="584" x2="850.0" y2="693" stroke="#334155" stroke-width="1.6" marker-end="url(#a)"/>
+<rect x="708.06" y="627.5" width="61.440000000000005" height="16" fill="#fff"/>
+<text x="766.5" y="638.5" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#334155">lit JSONL</text>
+<text x="10" y="48" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="bold" fill="#334155">PARTIE 1 — Données &amp; modélisation</text>
+<text x="10" y="271" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="bold" fill="#334155">Clients, tests &amp; interfaces</text>
+<text x="10" y="494" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="bold" fill="#334155">PARTIE 2 — API &amp; monitoring</text>
+<line x1="10" y1="852" x2="50" y2="852" stroke="#334155" stroke-width="1.6" marker-end="url(#a)"/><text x="58" y="856" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#334155">flux / association</text>
+<line x1="200" y1="852" x2="240" y2="852" stroke="#334155" stroke-width="1.6" stroke-dasharray="6 4" marker-end="url(#o)"/><text x="248" y="856" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#334155">dépendance / utilisation</text></svg>
