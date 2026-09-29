@@ -1,0 +1,12 @@
+=== RAPPORT DE PROFILAGE & OPTIMISATION (N=200) ===
+1. LightGBM (Standard) :
+   - Latence moyenne : 10.689 ms
+   - Latence P95     : 14.689 ms
+
+2. ONNX Runtime (Optimisé) :
+   - Latence moyenne : 0.027 ms
+   - Latence P95     : 0.035 ms
+
+3. Gain de performance :
+   - Accélération    : x390.51
+   - Réduction temps : 99.7 %
