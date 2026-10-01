@@ -132,6 +132,7 @@ flowchart TD
 │   ├── simulate_traffic.py             # Client de test : envoie 10 clients réels à /predict
 │   └── test_api.py                     # Tests unitaires Pytest (7 tests de robustesse)
 ├── Dockerfile                          # Conteneurisation de l'API
+├── Dockerfile.ci                       # GitHub Actions
 ├── docker-compose.yml                  # Déploiement local orchestré
 └── pyproject.toml                      # Dépendances et environnement (uv)
 ```
