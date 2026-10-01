@@ -164,22 +164,25 @@ def predict(payload: ClientInput):
             df_client[col] = pd.to_numeric(df_client[col], errors="coerce")
 
         if onnx_sess:
-            data_matrix = df_client.to_numpy(dtype=np.float32)
-            input_name = onnx_sess.get_inputs()[0].name
-            output_name = onnx_sess.get_outputs()[1].name
-            pred_raw = onnx_sess.run([output_name], {input_name: data_matrix})[0]
-            proba_defaut = float(pred_raw[0][1] if isinstance(pred_raw, list) else pred_raw[0, 1])
+            try:
+                data_matrix = df_client.to_numpy(dtype=np.float32)
+                input_name = onnx_sess.get_inputs()[0].name
+        
+                outputs = onnx_sess.run(None, {input_name: data_matrix})
+                pred_raw = outputs[-1]
+        
+                if isinstance(pred_raw, list):
+                    proba_defaut = float(pred_raw[0][1])
+                else:
+                    proba_defaut = float(pred_raw[0, 1])
+        
+            except Exception as onnx_error:
+                print(f"⚠️ Erreur ONNX, fallback vers le modèle principal : {onnx_error}")
+                df_client = df_client.astype(np.float64)
+                proba_defaut = float(model.predict_proba(df_client)[0][1])
         else:
             df_client = df_client.astype(np.float64)
             proba_defaut = float(model.predict_proba(df_client)[0][1])
-
-        decision = "REFUSE" if proba_defaut >= threshold else "ACCORDE"
-        latency_ms = (time.perf_counter() - start_time) * 1000.0
-
-        serializable_features = {
-            k: (None if pd.isna(v) else (v.item() if hasattr(v, "item") else v))
-            for k, v in payload.features.items()
-        }
 
         log_prediction_event(
             client_id=payload.client_id,
