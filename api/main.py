@@ -94,23 +94,32 @@ async def lifespan(app: FastAPI):
     """Charge le modèle au démarrage de l'API."""
     try:
         model, features, threshold, run_id = load_champion_model_and_threshold()
+
         MODEL_STATE["model"] = model
         MODEL_STATE["feature_names"] = features
         MODEL_STATE["optimal_threshold"] = threshold
         MODEL_STATE["run_id"] = run_id
 
         if ONNX_MODEL_PATH.exists() and not isinstance(model, MockCreditModel):
-    opts = rt.SessionOptions()
-    opts.intra_op_num_threads = 1
-    MODEL_STATE["onnx_session"] = rt.InferenceSession(
-        str(ONNX_MODEL_PATH),
-        sess_options=opts,
-        providers=["CPUExecutionProvider"],
-    )
-    print("🚀 Moteur ONNX Runtime activé (Latence optimisée).")
+            opts = rt.SessionOptions()
+            opts.intra_op_num_threads = 1
+
+            MODEL_STATE["onnx_session"] = rt.InferenceSession(
+                str(ONNX_MODEL_PATH),
+                sess_options=opts,
+                providers=["CPUExecutionProvider"],
+            )
+
+            print("🚀 Moteur ONNX Runtime activé (Latence optimisée).")
         else:
             MODEL_STATE["onnx_session"] = None
             print("ℹ️ Moteur standard LightGBM / Mock actif.")
+
+    except Exception as e:
+        print(f"❌ Erreur lors du chargement : {e}")
+        MODEL_STATE["model"] = None
+        MODEL_STATE["onnx_session"] = None
+
     yield
     MODEL_STATE.clear()
 
@@ -140,6 +149,7 @@ def health():
 def predict(payload: ClientInput):
     """Exécute l'inférence optimisée pour une demande de prêt."""
     start_time = time.perf_counter()
+
     model = MODEL_STATE["model"]
     onnx_sess = MODEL_STATE["onnx_session"]
     feature_names = MODEL_STATE["feature_names"]
@@ -153,37 +163,85 @@ def predict(payload: ClientInput):
 
     try:
         df_client = pd.DataFrame([payload.features])
-        cols_drop = [c for c in ["TARGET", "SK_ID_CURR", "index"] if c in df_client.columns]
+
+        # Suppression des colonnes inutiles / interdites
+        cols_drop = [
+            c for c in ["TARGET", "SK_ID_CURR", "index"]
+            if c in df_client.columns
+        ]
+
         if cols_drop:
             df_client = df_client.drop(columns=cols_drop)
 
+        # Alignement avec les features attendues par le modèle
         if feature_names:
             df_client = df_client.reindex(columns=feature_names)
 
+        # Conversion numérique
         for col in df_client.columns:
-            df_client[col] = pd.to_numeric(df_client[col], errors="coerce")
+            df_client[col] = pd.to_numeric(
+                df_client[col],
+                errors="coerce"
+            )
 
+        # Inférence
         if onnx_sess:
             try:
                 data_matrix = df_client.to_numpy(dtype=np.float32)
                 input_name = onnx_sess.get_inputs()[0].name
-        
-                outputs = onnx_sess.run(None, {input_name: data_matrix})
+
+                outputs = onnx_sess.run(
+                    None,
+                    {input_name: data_matrix}
+                )
+
                 pred_raw = outputs[-1]
-        
+
                 if isinstance(pred_raw, list):
                     proba_defaut = float(pred_raw[0][1])
                 else:
                     proba_defaut = float(pred_raw[0, 1])
-        
+
             except Exception as onnx_error:
-                print(f"⚠️ Erreur ONNX, fallback vers le modèle principal : {onnx_error}")
+                print(
+                    f"⚠️ Erreur ONNX, fallback vers le modèle principal : "
+                    f"{onnx_error}"
+                )
+
                 df_client = df_client.astype(np.float64)
-                proba_defaut = float(model.predict_proba(df_client)[0][1])
+                proba_defaut = float(
+                    model.predict_proba(df_client)[0][1]
+                )
+
         else:
             df_client = df_client.astype(np.float64)
-            proba_defaut = float(model.predict_proba(df_client)[0][1])
+            proba_defaut = float(
+                model.predict_proba(df_client)[0][1]
+            )
 
+        # Décision métier
+        decision = (
+            "REFUSE"
+            if proba_defaut >= threshold
+            else "ACCORDE"
+        )
+
+        # Latence
+        latency_ms = (
+            time.perf_counter() - start_time
+        ) * 1000.0
+
+        # Features sérialisables pour le log
+        serializable_features = {
+            k: (
+                None
+                if pd.isna(v)
+                else (v.item() if hasattr(v, "item") else v)
+            )
+            for k, v in payload.features.items()
+        }
+
+        # Logging
         log_prediction_event(
             client_id=payload.client_id,
             features=serializable_features,
@@ -201,8 +259,10 @@ def predict(payload: ClientInput):
             decision=decision,
             status="SUCCESS",
         )
+
     except HTTPException:
         raise
+
     except Exception as e:
         raise HTTPException(
             status_code=status.HTTP_400_BAD_REQUEST,
