@@ -99,18 +99,18 @@ async def lifespan(app: FastAPI):
         MODEL_STATE["optimal_threshold"] = threshold
         MODEL_STATE["run_id"] = run_id
 
-        if ONNX_MODEL_PATH.exists():
-            opts = rt.SessionOptions()
-            opts.intra_op_num_threads = 1
-            MODEL_STATE["onnx_session"] = rt.InferenceSession(
-                str(ONNX_MODEL_PATH), sess_options=opts, providers=["CPUExecutionProvider"]
-            )
-            print(f"🚀 Moteur ONNX Runtime activé (Latence optimisée).")
+        if ONNX_MODEL_PATH.exists() and not isinstance(model, MockCreditModel):
+    opts = rt.SessionOptions()
+    opts.intra_op_num_threads = 1
+    MODEL_STATE["onnx_session"] = rt.InferenceSession(
+        str(ONNX_MODEL_PATH),
+        sess_options=opts,
+        providers=["CPUExecutionProvider"],
+    )
+    print("🚀 Moteur ONNX Runtime activé (Latence optimisée).")
         else:
-            print("ℹ️ Moteur standard LightGBM actif.")
-    except Exception as e:
-        print(f"❌ Erreur lors du chargement : {e}")
-        MODEL_STATE["model"] = None
+            MODEL_STATE["onnx_session"] = None
+            print("ℹ️ Moteur standard LightGBM / Mock actif.")
     yield
     MODEL_STATE.clear()
 
